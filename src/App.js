@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Face1 from "./Face1";
+import Face2 from "./Face2";
+
+import "./App.css";
+import './face1.css';
+import './face2.css';
 
 function App() {
+  const [face, setFace] = useState('face1');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='controls'>
+        <button onClick={() => setFace('face1')}>face1</button>
+        <button onClick={() => setFace('face2')}>face2</button>
+
+      </div>
+      {face === 'face1' && <Face1 />}
+      {face === 'face2' && <Face2 />}
+
     </div>
   );
 }
