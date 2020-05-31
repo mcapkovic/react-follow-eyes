@@ -1,0 +1,59 @@
+.panda0 {
+  position: relative;
+  height: 300px;
+  width: 400px;
+}
+
+.panda0 .eye {
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.panda0 .eye.left {
+  transform: translateX(calc(-50% - 100px));
+}
+
+.panda0 .eye.right {
+  transform: translateX(calc(-50% + 100px));
+}
+
+.panda0 .eye .eye-roll {
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: center left;
+
+  top: 42px;
+  left: 75px;
+  height: 70px;
+  width: 70px;
+}
+
+.panda0 .nose {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.panda0 .mouth {
+  background: black;
+  border-radius: 5% 5% 50% 50%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 40px;
+  width: 50px;
+  transition: height 0.5s ease, border-radius 0.5s ease;
+}
+
+.panda0:hover .mouth {
+  border-radius: 50%;
+  height: 50px;
+}

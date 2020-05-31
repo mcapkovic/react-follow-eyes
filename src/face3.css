@@ -1,0 +1,54 @@
+.panda3{
+  /* width: 100vh;
+    height: 100vh; */
+
+    height: 300px;
+    width: 400px;
+}
+
+.panda3 #svg {
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+}
+
+/* .panda3 #left-eye,
+.panda3 #right-eye{
+  transition: transform 100ms ease;
+} */
+
+.panda3 #left-eye{
+  transform-origin: 28% 50%;
+}
+
+.panda3 #right-eye{
+  transform-origin: 72% 50%;
+}
+
+
+.panda3 .eye-outer {
+  fill: black;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.panda3 .eye-inner {
+  fill: white;
+}
+
+.panda3 .mouth {
+  background: black;
+  border-radius: 5% 5% 50% 50%;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 40px;
+  width: 50px;
+  transition: height 0.5s ease, border-radius 0.5s ease;
+}
+
+.panda3:hover .mouth {
+  border-radius: 50%;
+  height: 50px;
+}
