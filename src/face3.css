@@ -1,7 +1,7 @@
 .panda3{
   /* width: 100vh;
     height: 100vh; */
-
+    position: relative;
     height: 300px;
     width: 400px;
 }
@@ -40,7 +40,7 @@
   background: black;
   border-radius: 5% 5% 50% 50%;
   position: absolute;
-  top: 62%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%);
   height: 40px;
